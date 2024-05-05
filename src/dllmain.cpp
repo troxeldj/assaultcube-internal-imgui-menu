@@ -11,17 +11,6 @@ twglSwapBuffers wglSwapBuffersGateway;
 Menu menu;
 
 BOOL __stdcall hkwglSwapBuffers(HDC hDc) {
-    
-    if (GetAsyncKeyState(VK_NUMPAD1) & 1)
-        hack::bAmmo = !hack::bAmmo;
-    if (GetAsyncKeyState(VK_NUMPAD2) & 1)
-        hack::bHealth = !hack::bHealth;
-    if (GetAsyncKeyState(VK_NUMPAD3) & 1)
-        hack::bRecoil = !hack::bRecoil;
-    if (GetAsyncKeyState(VK_NUMPAD4) & 1)
-        hack::bESP = !hack::bESP;
-    if (GetAsyncKeyState(VK_NUMPAD5) & 1)
-        hack::bAimbot = !hack::bAimbot;
     if (GetAsyncKeyState(VK_INSERT) & 1)
         hack::bMenu = !hack::bMenu;
   

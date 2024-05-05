@@ -34,6 +34,7 @@ int hack::aimBotMode = 0;
 bool hack::bESP = false;
 bool hack::bMenu = false;
 bool hack::bPlayerNames = false;
+bool hack::bSnapLines = false;
 
 // For Drawing
 int hack::fontWidth = 8;
@@ -41,6 +42,7 @@ int hack::fontHeight = 15;
 
 ImVec4 hack::rgb::playerBoxColor = ImVec4(255, 0, 0, 1);
 ImVec4 hack::rgb::playerNameColor = ImVec4(255, 255, 255, 1);
+ImVec4 hack::rgb::playerSnapColor = ImVec4(255, 0, 0, 1);
 
 void hack::init() {
 	// Get Module Base Address
@@ -107,6 +109,7 @@ void hack::drawESPBoxes() {
 			if (currentEnt->bCrouching)
 				headPos.z -= 0.5625;
 
+			// Get Screen Head/Feet POS
 			if (WorldToScreen(headPos, headScreenPos, (float*)offsets::vMatrix, (int)GL::getScreenx(), (int)GL::getScreenY()) &&
 				WorldToScreen(feetPos, feetScreenPos, (float*)offsets::vMatrix, (int)GL::getScreenx(), (int)GL::getScreenY())) {
 				float height = feetScreenPos.y - headScreenPos.y;
@@ -118,11 +121,15 @@ void hack::drawESPBoxes() {
 				// Print Player Name
 				if (hack::bPlayerNames) {
 					std::string name = currentEnt->name;
-					float tWidth = name.length() * hack::fontWidth;
+					int tWidth = name.length() * hack::fontWidth;
 					float diff = width - tWidth;
 					font.Print((headScreenPos.x - width / 2.0f) + diff / 2, headScreenPos.y - hack::fontHeight / 2, hack::rgb::playerNameColor, "%s", currentEnt->name);
 				}
 				
+				// Draw Snap Lines
+				if (hack::bSnapLines) {
+					GL::DrawLine(GL::getScreenx() / 2.f, GL::getScreenY() / 2.f, feetScreenPos.x, feetScreenPos.y, 2.0f, hack::rgb::playerSnapColor);
+				}
 			}
 		}
 	}

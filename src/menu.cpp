@@ -70,11 +70,18 @@ void Menu::RenderMenu() {
 			if (ImGui::BeginTabItem("Visual")) {
 				ImGui::Checkbox("ESP", &hack::bESP);
 				ImGui::Checkbox("Player Names", &hack::bPlayerNames);
+				ImGui::Text("Snaplines");
+				ImGui::Checkbox("Snaplines", &hack::bSnapLines);
 				ImGui::SeparatorText("Color Editors");
+				// ESP Box Color
 				ImGui::Text("ESP Box Color:");
 				ImGui::ColorEdit3("ESP Color", (float*)&hack::rgb::playerBoxColor, ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_NoLabel);
+				// Name Color
 				ImGui::Text("Player Name Color: ");
 				ImGui::ColorEdit3("Name Color", (float*)&hack::rgb::playerNameColor, ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_NoLabel);
+				// Snaplines Color
+				ImGui::Text("Player SnapLines Color: ");
+				ImGui::ColorEdit3("Snap Color", (float*)&hack::rgb::playerSnapColor, ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_NoLabel);
 				ImGui::EndTabItem();
 			}
 			if (ImGui::BeginTabItem("Aimbot")) {

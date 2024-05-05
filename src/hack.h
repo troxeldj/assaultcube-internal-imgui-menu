@@ -2,9 +2,11 @@
 #include <iostream>
 #include "game.h"
 #include "mem.h"
-#include "openglDraw.h"
 #include "util.hpp"
 #include "imgui195/imgui.h"
+#include "openglDraw.h"
+
+extern GL::Font font;
 
 namespace offsets {
 	extern uintptr_t dwcrosshair;
@@ -37,6 +39,7 @@ namespace hack {
 	extern bool bESP;
 	extern bool bMenu;
 	extern bool bPlayerNames;
+	extern bool bSnapLines;
 
 	extern int fontWidth;
 	extern int fontHeight;
@@ -44,6 +47,7 @@ namespace hack {
 	namespace rgb {
 		extern ImVec4 playerBoxColor;
 		extern ImVec4 playerNameColor;
+		extern ImVec4 playerSnapColor;
 	}
 
 

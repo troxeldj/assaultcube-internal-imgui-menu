@@ -6,7 +6,7 @@ Hooks OpenGL SwapBuffers
 Uses SDL ShowCursor function
 
 ## Features
-- ESP (Boxes and Player Names)
+- ESP (Boxes, Player Names, and Snaplines)
 - Aimbot (Auto and button hold)
 - Godmode
 - Unlimited Ammo

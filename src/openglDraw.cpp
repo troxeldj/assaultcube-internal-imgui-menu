@@ -74,6 +74,15 @@ void GL::DrawOutline(float x, float y, float x2, float y2, float lineWidth, ImVe
 	glEnd();
 }
 
+void GL::DrawLine(float startx, float starty, float endx, float endy, float lineWidth, ImVec4 color) {
+	glColor4f(color.x, color.y, color.z, color.w);
+	glLineWidth(lineWidth);
+	glBegin(GL_LINES);
+	glVertex2f(startx, starty);
+	glVertex2f(endx, endy);
+	glEnd();
+}
+
 float GL::getScreenx() {
 
 	float viewport[4] = { 0 };
@@ -88,10 +97,9 @@ float GL::getScreenY() {
 	return viewport[3];
 }
 
-
 void GL::Font::Build(int height) {
-	this->hdc = wglGetCurrentDC();
-	this->base = glGenLists(96);
+	hdc = wglGetCurrentDC();
+	base = glGenLists(96);
 	HFONT hFont = CreateFontA(-height, 0, 0, 0, FW_MEDIUM, FALSE, FALSE, FALSE, ANSI_CHARSET, OUT_TT_PRECIS, CLIP_DEFAULT_PRECIS, PROOF_QUALITY, FF_DONTCARE | DEFAULT_PITCH, "Arial");
 	HFONT hOldFont = (HFONT)SelectObject(hdc, hFont);
 	
@@ -101,7 +109,8 @@ void GL::Font::Build(int height) {
 
 	bBuilt = true;
 }
-void GL::Font::Print(float x, float y, ImVec4 color, const char* format, ...) {
+void GL::Font::Print(float x, float y, ImVec4 color, const char* format, ...)
+{
 	HDC fontHDC = wglGetCurrentDC();
 
 	if (fontHDC != f.hdc)
