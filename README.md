@@ -20,7 +20,7 @@ Uses SDL ShowCursor function
 4. Use any DLL injector (I personally use the GHInjector) to inject DLL into game process
 
 ## Credits
-[Guided Hacking]("https://guidedhacking.com/")
+[Guided Hacking](https://guidedhacking.com)
 
 [This Repo by Kix48](https://github.com/Kix48/AssaultCube-Internal) was super helpful whenever I got stuck.
 
