@@ -19,41 +19,41 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="dllmain.cpp" />
-    <ClCompile Include="game.cpp" />
-    <ClCompile Include="hack.cpp" />
-    <ClCompile Include="hook.cpp" />
-    <ClCompile Include="imgui195\imgui.cpp" />
-    <ClCompile Include="imgui195\imgui_demo.cpp" />
-    <ClCompile Include="imgui195\imgui_draw.cpp" />
-    <ClCompile Include="imgui195\imgui_impl_opengl2.cpp" />
-    <ClCompile Include="imgui195\imgui_impl_win32.cpp" />
-    <ClCompile Include="imgui195\imgui_tables.cpp" />
-    <ClCompile Include="imgui195\imgui_widgets.cpp" />
-    <ClCompile Include="mem.cpp" />
-    <ClCompile Include="menu.cpp" />
-    <ClCompile Include="openglDraw.cpp" />
-    <ClCompile Include="proc.cpp" />
-    <ClCompile Include="util.cpp" />
+    <ClCompile Include="src\dllmain.cpp" />
+    <ClCompile Include="src\game.cpp" />
+    <ClCompile Include="src\hack.cpp" />
+    <ClCompile Include="src\hook.cpp" />
+    <ClCompile Include="src\imgui195\imgui.cpp" />
+    <ClCompile Include="src\imgui195\imgui_demo.cpp" />
+    <ClCompile Include="src\imgui195\imgui_draw.cpp" />
+    <ClCompile Include="src\imgui195\imgui_impl_opengl2.cpp" />
+    <ClCompile Include="src\imgui195\imgui_impl_win32.cpp" />
+    <ClCompile Include="src\imgui195\imgui_tables.cpp" />
+    <ClCompile Include="src\imgui195\imgui_widgets.cpp" />
+    <ClCompile Include="src\mem.cpp" />
+    <ClCompile Include="src\menu.cpp" />
+    <ClCompile Include="src\openglDraw.cpp" />
+    <ClCompile Include="src\proc.cpp" />
+    <ClCompile Include="src\util.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="game.h" />
-    <ClInclude Include="glFont.h" />
-    <ClInclude Include="hack.h" />
-    <ClInclude Include="hook.h" />
-    <ClInclude Include="imgui195\imconfig.h" />
-    <ClInclude Include="imgui195\imgui.h" />
-    <ClInclude Include="imgui195\imgui_impl_opengl2.h" />
-    <ClInclude Include="imgui195\imgui_impl_win32.h" />
-    <ClInclude Include="imgui195\imgui_internal.h" />
-    <ClInclude Include="imgui195\imstb_rectpack.h" />
-    <ClInclude Include="imgui195\imstb_textedit.h" />
-    <ClInclude Include="imgui195\imstb_truetype.h" />
-    <ClInclude Include="mem.h" />
-    <ClInclude Include="menu.h" />
-    <ClInclude Include="openglDraw.h" />
-    <ClInclude Include="proc.h" />
-    <ClInclude Include="util.hpp" />
+    <ClInclude Include="src\game.h" />
+    <ClInclude Include="src\glFont.h" />
+    <ClInclude Include="src\hack.h" />
+    <ClInclude Include="src\hook.h" />
+    <ClInclude Include="src\imgui195\imconfig.h" />
+    <ClInclude Include="src\imgui195\imgui.h" />
+    <ClInclude Include="src\imgui195\imgui_impl_opengl2.h" />
+    <ClInclude Include="src\imgui195\imgui_impl_win32.h" />
+    <ClInclude Include="src\imgui195\imgui_internal.h" />
+    <ClInclude Include="src\imgui195\imstb_rectpack.h" />
+    <ClInclude Include="src\imgui195\imstb_textedit.h" />
+    <ClInclude Include="src\imgui195\imstb_truetype.h" />
+    <ClInclude Include="src\mem.h" />
+    <ClInclude Include="src\menu.h" />
+    <ClInclude Include="src\openglDraw.h" />
+    <ClInclude Include="src\proc.h" />
+    <ClInclude Include="src\util.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

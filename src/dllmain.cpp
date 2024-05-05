@@ -73,6 +73,8 @@ BOOL WINAPI HackThread(HMODULE hModule) {
 
     // Disable our hook
     swapBuffersHook.Disable();
+
+    // Shutdown Menu
     menu.Shutdown();
     Sleep(100);
 

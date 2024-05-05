@@ -21,105 +21,105 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="dllmain.cpp">
+    <ClCompile Include="src\dllmain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="proc.cpp">
+    <ClCompile Include="src\proc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mem.cpp">
+    <ClCompile Include="src\mem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="game.cpp">
+    <ClCompile Include="src\game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="hook.cpp">
+    <ClCompile Include="src\hook.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="openglDraw.cpp">
+    <ClCompile Include="src\openglDraw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="hack.cpp">
+    <ClCompile Include="src\hack.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="util.cpp">
+    <ClCompile Include="src\util.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="menu.cpp">
+    <ClCompile Include="src\menu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="imgui195\imgui_demo.cpp">
+    <ClCompile Include="src\imgui195\imgui_demo.cpp">
       <Filter>Source Files\ImGui Stuff</Filter>
     </ClCompile>
-    <ClCompile Include="imgui195\imgui_draw.cpp">
+    <ClCompile Include="src\imgui195\imgui_draw.cpp">
       <Filter>Source Files\ImGui Stuff</Filter>
     </ClCompile>
-    <ClCompile Include="imgui195\imgui_impl_opengl2.cpp">
+    <ClCompile Include="src\imgui195\imgui_impl_opengl2.cpp">
       <Filter>Source Files\ImGui Stuff</Filter>
     </ClCompile>
-    <ClCompile Include="imgui195\imgui_impl_win32.cpp">
+    <ClCompile Include="src\imgui195\imgui_impl_win32.cpp">
       <Filter>Source Files\ImGui Stuff</Filter>
     </ClCompile>
-    <ClCompile Include="imgui195\imgui_tables.cpp">
+    <ClCompile Include="src\imgui195\imgui_tables.cpp">
       <Filter>Source Files\ImGui Stuff</Filter>
     </ClCompile>
-    <ClCompile Include="imgui195\imgui_widgets.cpp">
+    <ClCompile Include="src\imgui195\imgui_widgets.cpp">
       <Filter>Source Files\ImGui Stuff</Filter>
     </ClCompile>
-    <ClCompile Include="imgui195\imgui.cpp">
+    <ClCompile Include="src\imgui195\imgui.cpp">
       <Filter>Source Files\ImGui Stuff</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="mem.h">
+    <ClInclude Include="src\mem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="proc.h">
+    <ClInclude Include="src\proc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="util.hpp">
+    <ClInclude Include="src\util.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="game.h">
+    <ClInclude Include="src\game.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="hook.h">
+    <ClInclude Include="src\hook.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="openglDraw.h">
+    <ClInclude Include="src\openglDraw.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="hack.h">
+    <ClInclude Include="src\hack.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="glFont.h">
+    <ClInclude Include="src\glFont.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="menu.h">
+    <ClInclude Include="src\menu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="imgui195\imconfig.h">
+    <ClInclude Include="src\imgui195\imconfig.h">
       <Filter>Header Files\ImGui Stuff</Filter>
     </ClInclude>
-    <ClInclude Include="imgui195\imgui.h">
+    <ClInclude Include="src\imgui195\imgui.h">
       <Filter>Header Files\ImGui Stuff</Filter>
     </ClInclude>
-    <ClInclude Include="imgui195\imgui_impl_opengl2.h">
+    <ClInclude Include="src\imgui195\imgui_impl_opengl2.h">
       <Filter>Header Files\ImGui Stuff</Filter>
     </ClInclude>
-    <ClInclude Include="imgui195\imgui_impl_win32.h">
+    <ClInclude Include="src\imgui195\imgui_impl_win32.h">
       <Filter>Header Files\ImGui Stuff</Filter>
     </ClInclude>
-    <ClInclude Include="imgui195\imgui_internal.h">
+    <ClInclude Include="src\imgui195\imgui_internal.h">
       <Filter>Header Files\ImGui Stuff</Filter>
     </ClInclude>
-    <ClInclude Include="imgui195\imstb_rectpack.h">
+    <ClInclude Include="src\imgui195\imstb_rectpack.h">
       <Filter>Header Files\ImGui Stuff</Filter>
     </ClInclude>
-    <ClInclude Include="imgui195\imstb_textedit.h">
+    <ClInclude Include="src\imgui195\imstb_textedit.h">
       <Filter>Header Files\ImGui Stuff</Filter>
     </ClInclude>
-    <ClInclude Include="imgui195\imstb_truetype.h">
+    <ClInclude Include="src\imgui195\imstb_truetype.h">
       <Filter>Header Files\ImGui Stuff</Filter>
     </ClInclude>
   </ItemGroup>
